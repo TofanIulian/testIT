@@ -8,4 +8,12 @@ export class AppPage {
   getPageTitle() {
     return element(by.css('ion-title')).getText();
   }
+
+  load() {
+    return browser.get('/login');
+  }
+
+  waitForPageNavigation() {
+    //to do
+  }
 }

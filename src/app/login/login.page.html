@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Default Label</ion-label>
+    <ion-input id="email" #email></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Default Label</ion-label>
+    <ion-input id="password" #password type="password"></ion-input>
+  </ion-item>
+
+  <ion-button id="signin" #signin expand="block" (click)="login()">login</ion-button>
+
+  
+  <ion-label *ngIf="error" class="error" style="color: red; font-weight: 700;">The password is invalid or the user does not have a password.</ion-label>
+</ion-content>
